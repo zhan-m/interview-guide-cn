@@ -1,0 +1,35 @@
+---
+import Nav from '../components/Nav.astro';
+import BaseHead from '../components/Head/BaseHead.astro';
+import StructuredData from '../components/Head/StructuredData.astro';
+import BlogPost from '../components/BlogPost.astro';
+
+const {content} = Astro.props;
+const {title, description, pubDate, hero, youtube, tags} = content;
+---
+<html lang={ content.lang || 'en' }>
+  <head>
+    <BaseHead title={title} description={description} image={hero} />
+    <StructuredData 
+      type="article" 
+      title={title} 
+      description={description}
+      datePublished={pubDate}
+      image={hero}
+      tags={tags}
+    />
+  </head>
+
+  <body>
+    <Nav />
+    <main class="py-12 lg:py-20">
+      <BlogPost title={title} hero={hero} date={pubDate} youtube={youtube} >
+        <slot />
+      </BlogPost>
+      <div class="text-center mt-20">
+        Enjoy this post? Consider <a class="text-hot-pink border-b border-dashed hover:border-transparent hover:text-black transition-all duration-300" href="/">checking out my free Interview Guide!</a>
+      </div>
+    </main>
+  </body>
+</html>
+

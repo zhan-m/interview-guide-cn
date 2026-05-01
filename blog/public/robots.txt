@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://interviewguide.dev/blog/sitemap-index.xml
+Sitemap: https://interviewguide.dev/sitemap.xml
