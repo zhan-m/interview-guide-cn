@@ -6,6 +6,10 @@ export default {
   title: "面试指南（中文版）",
   description: "软件工程师面试免费中文指南",
   head: [
+    ["link", { rel: "icon", type: "image/x-icon", href: "/interview-guide-cn/favicon.ico" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/interview-guide-cn/favicon-32x32.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/interview-guide-cn/favicon-16x16.png" }],
+    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/interview-guide-cn/apple-touch-icon.png" }],
     ["link", { rel: "stylesheet", href: "/interview-guide-cn/custom.css" }],
   ],
   cleanUrls: true,
