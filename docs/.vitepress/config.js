@@ -8,7 +8,7 @@ export default {
   head: [
     ["link", { rel: "stylesheet", href: "/interview-guide-cn/custom.css" }],
   ],
-  cleanUrls: "with-subfolders",
+  cleanUrls: true,
   themeConfig: {
     siteTitle: "面试指南（中文版）",
     socialLinks: [
