@@ -1,16 +1,14 @@
-// GitHub Pages 部署：默认假设仓库名为 interview-guide-cn，
-// 即站点最终在 https://<username>.github.io/interview-guide-cn/
-// 如果绑定了自定义域名（CNAME 文件存在）或仓库是 <username>.github.io，把 base 改为 "/"
+// 自定义域名 interview.zhan-m.com 部署，base 走域名根
 export default {
-  base: "/interview-guide-cn/",
+  base: "/",
   title: "面试指南（中文版）",
   description: "软件工程师面试免费中文指南",
   head: [
-    ["link", { rel: "icon", type: "image/x-icon", href: "/interview-guide-cn/favicon.ico" }],
-    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/interview-guide-cn/favicon-32x32.png" }],
-    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/interview-guide-cn/favicon-16x16.png" }],
-    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/interview-guide-cn/apple-touch-icon.png" }],
-    ["link", { rel: "stylesheet", href: "/interview-guide-cn/custom.css" }],
+    ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" }],
+    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }],
+    ["link", { rel: "stylesheet", href: "/custom.css" }],
   ],
   cleanUrls: true,
   themeConfig: {
